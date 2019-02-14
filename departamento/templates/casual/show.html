@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% block content %}
+<div class="row">
+    <div class="col-lg-12">
+        <h3 class="page-header">
+            <li>
+                <i class="fa fa-home"></i>
+                <a href="/departamento/">Loja</a>
+            </li>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h2> Detalhes da camisa casual!</h2>
+        <div>
+            <label>Esporte:</label>
+            {{casual.esporte}}
+        </div>
+        <div>
+            <label>Cor:</label>
+            {{casual.cor}}
+        </div>
+        <div>
+            <label>Tipo:</label>
+            {{casual.tipo}}
+        </div>
+        <td>
+            <a href="/departamento/casual/">Voltar</a>
+        </td>
+    </div>
+</div>
+{% endblock %}

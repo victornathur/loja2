@@ -1,0 +1,49 @@
+{% extends "base.html" %} {% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h3 class="page-header">
+            <i class="fa fa-laptop"></i> Listagem de camisas </h3>
+        <ol class="breadcrumb">
+            <li>
+                <i class="fa fa-home"></i>
+                <a href="/departamento/">Loja</a>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Jogador</th>
+                    <th>Numero</th>
+                    <th>Tamanho</th>
+                    <th>#</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for camisa in camisas %}
+                <tr>
+                    <td>{{camisa.time}}</td>
+                    <td>{{camisa.jogador}}</td>
+                    <td>{{camisa.numero}}</td>
+                    <td>{{camisa.tamanho}}</td>
+                    <td>
+                        <a href="/departamento/camisa/{{camisa.id}}/">Ver</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <p>Foram encontradas {{camisas | length}} cadastradas!</p>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+{% endblock %}

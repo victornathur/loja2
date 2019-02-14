@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block content %}
+<div class="row">
+    <div class="col-lg-12">
+        <h3 class="page-header">
+            <li>
+                <i class="fa fa-home"></i>
+                <a href="/departamento/">Loja</a>
+            </li>
+    </div>
+</div>
+<div class="row">
+<div class="col-md-12">
+    <h2> Detalhes da camisa!</h2>
+    <div>
+        <label>Time:</label>
+        {{camisa.time}}
+    </div>
+    <div>
+        <label>Jogador:</label>
+        {{camisa.jogador}}
+    </div>
+    <div>
+        <label>Numero:</label>
+        {{camisa.numero}}
+    </div>
+    <div>
+        <label>Tamanho:</label>
+        {{camisa.tamanho}}
+    </div>
+    <td>
+            <a href="/departamento/camisa/">Voltar</a>
+    </td>
+</div>
+</div>
+{% endblock %}
