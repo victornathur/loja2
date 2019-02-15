@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from . models import Camisa, Casual
+from . models import Camisa
+from . forms import CamisaForm
 
 def home(request):
     return render(request, 'home.html' ,{})
@@ -21,4 +22,15 @@ def casual_show(request, casual_id):
     casual = Casual.objects.get(pk=casual_id)
     return render(request, 'casual/show.html', {'casual':casual})  
 
-# Create your views here.
+def camisa_form(request):
+    if (request.method == 'POST'):
+        form = CamisaForm(request.POST)
+        if form.is_valid():
+          form.save()
+          return redirect('/departamento/camisa/')
+        else:
+          return render(request, 'camisa/form.html', {'form':form})   
+    else:
+        form = CamisaForm()
+        return render(request, 'camisa/form.html', {'form':form})
+

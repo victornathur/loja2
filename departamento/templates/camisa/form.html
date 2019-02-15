@@ -1,0 +1,54 @@
+{% extends "base.html" %} {% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h3 class="page-header">
+            <i class="fa fa-laptop"></i> Cadastrando Camisa </h3>
+        <ol class="breadcrumb">
+            <li>
+                <i class="fa fa-home"></i>
+                <a href="/departamento/">Loja</a>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="panel-body">
+    <form role="form" class="form-validate" action="/departamento/camisa/form/" method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="{{for.time.id_for_label}}">{{form.time.label}}</label>
+            <div>
+                {{form.time}} {% for error in form.time.errors %}
+                <label for="{{for.time.id_for_label}}" class="error">{{error}}</label>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="{{for.jogador.id_for_label}}">{{form.jogador.label}}</label>
+            <div>
+                {{form.jogador}} {% for error in form.jogador.errors %}
+                <label for="{{for.jogador.id_for_label}}" class="error">{{error}}</label>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="{{for.numero.id_for_label}}">{{form.numero.label}}</label>
+            <div>
+                {{form.numero}} {% for error in form.numero.errors %}
+                <label for="{{for.numero.id_for_label}}" class="error">{{error}}</label>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="{{for.tamanho.id_for_label}}">{{form.tamanho.label}}</label>
+            <div>
+                {{form.tamanho}} {% for error in form.tamanho.errors %}
+                <label for="{{for.tamanho.id_for_label}}" class="error">{{error}}</label>
+                {% endfor %}
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <a class="btn btn-primary" href="/departamento/camisa/">Voltar</a>
+    </form>
+</div>
+
+{% endblock %}

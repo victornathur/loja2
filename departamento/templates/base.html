@@ -1,90 +1,107 @@
 {% load static %}
 <!DOCTYPE HTML>
 <html>
-<head>
-<title>Loja</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<link href="{% static 'web/css/bootstrap.css'  %}" rel="stylesheet" type="text/css" media="all">
-<!-- Custom Theme files -->
-<link href="{% static 'web/css/style.css' %}" rel="stylesheet" type="text/css" media="all"/>
-<!--js-->
-<script src="{% static 'web/js/jquery-2.1.1.min.js' %}"></script> 
-<!--icons-css-->
-<link href="{% static 'web/css/font-awesome.css' %}" rel="stylesheet"> 
-<!--Google Fonts-->
-<link href='//fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Work+Sans:400,500,600' rel='stylesheet' type='text/css'>
-<!--static chart-->
-<script src="{% static 'web/js/Chart.min.js' %}"></script>
-<!--//charts-->
-<!-- geo chart -->
-    <script src="{% static 'web//cdn.jsdelivr.net/modernizr/2.8.3/modernizr.min.js' %}" type="text/javascript"></script>
-    <script>window.modernizr || document.write("<script src=/lib/modernizr/modernizr-custom.js><\/script>")</script>
-    <!--<script src="{% static "web/lib/html5shiv/html5shiv.js"></script>-->
-     <!-- Chartinator  -->
-    <script src="{% static 'web/js/chartinator.js' %}" ></script>
-    <script type="{% static 'web/text/javascript' %}">
-    </script>
-<!--geo chart-->
 
-<!--skycons-icons-->
-<script src="{% static 'web/js/skycons.js' %}"></script>
-<!--//skycons-icons-->
+<head>
+	<title>Loja</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<link href="{% static 'web/css/bootstrap.css'  %}" rel="stylesheet" type="text/css" media="all">
+	<!-- Custom Theme files -->
+	<link href="{% static 'web/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!--js-->
+	<script src="{% static 'web/js/jquery-2.1.1.min.js' %}"></script>
+	<!--icons-css-->
+	<link href="{% static 'web/css/font-awesome.css' %}" rel="stylesheet">
+	<!--Google Fonts-->
+	<link href='//fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Work+Sans:400,500,600' rel='stylesheet' type='text/css'>
+	<!--static chart-->
+	<script src="{% static 'web/js/Chart.min.js' %}"></script>
+	<!--//charts-->
+	<!-- geo chart -->
+	<script src="{% static 'web//cdn.jsdelivr.net/modernizr/2.8.3/modernizr.min.js' %}" type="text/javascript"></script>
+	<script>window.modernizr || document.write("<script src=/lib/modernizr/modernizr-custom.js><\/script>")</script>
+	<!--<script src="{% static "web/lib/html5shiv/html5shiv.js"></script>-->
+	<!-- Chartinator  -->
+	<script src="{% static 'web/js/chartinator.js' %}"></script>
+	<script type="{% static 'web/text/javascript' %}">
+    </script>
+	<!--geo chart-->
+
+	<!--skycons-icons-->
+	<script src="{% static 'web/js/skycons.js' %}"></script>
+	<!--//skycons-icons-->
 </head>
-<body>	
-<div class="page-container">	
-   <div class="left-content">
-	   <div class="mother-grid-inner">
-            <!--header start here-->
+
+<body>
+	<div class="page-container">
+		<div class="left-content">
+			<div class="mother-grid-inner">
+				<!--header start here-->
 				<div class="header-main">
 					<div class="header-left">
-							<div class="logo-name">
-									 <a href="/departamento/"><h1>Loja</h1>
-									<!--<img id="logo" src="" alt="Logo"/>--> 
-								  </a> 								
-							</div>
-							<!--search-box-->
-								<div class="search-box">
-									<form>
-										<input type="text" placeholder="Search..." required="">	
-										<input type="submit" value="">					
-									</form>
-								</div><!--//end-search-box-->
-							<div class="clearfix"> </div>
-						 </div>
-						 <div class="header-right">
-							<div class="profile_details_left"><!--notifications of menu start -->
-								<ul class="nofitications-dropdown">
-									<li class="dropdown head-dpdn">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-envelope"></i><span class="badge">3</span></a>
-										<ul class="dropdown-menu">
-											<li>
-												<div class="notification_header">
-													<h3>Você tem 3 novas mensagens</h3>
+						<div class="logo-name">
+							<a href="/departamento/">
+								<h1>Loja</h1>
+								<!--<img id="logo" src="" alt="Logo"/>-->
+							</a>
+						</div>
+						<!--search-box-->
+						<div class="search-box">
+							<form>
+								<input type="text" placeholder="Search..." required="">
+								<input type="submit" value="">
+							</form>
+						</div>
+						<!--//end-search-box-->
+						<div class="clearfix"> </div>
+					</div>
+					<div class="header-right">
+						<div class="profile_details_left">
+							<!--notifications of menu start -->
+							<ul class="nofitications-dropdown">
+								<li class="dropdown head-dpdn">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+										<i class="fa fa-envelope"></i>
+										<span class="badge">3</span>
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<div class="notification_header">
+												<h3>Você tem 3 novas mensagens</h3>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li class="dropdown head-dpdn">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+										<i class="fa fa-bell"></i>
+										<span class="badge blue">3</span>
+									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<div class="notification_header">
+												<h3>Voce tem 3 novas notificões</h3>
+											</div>
+										</li>
+										<li>
+											<a href="#">
+												<div class="user_img">
+													<img src="images/p5.png" alt="">
 												</div>
-											</li>
-										</ul>
+												<div class="notification_desc">
+									</ul>
 									</li>
 									<li class="dropdown head-dpdn">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-bell"></i><span class="badge blue">3</span></a>
-										<ul class="dropdown-menu">
-											<li>
-												<div class="notification_header">
-													<h3>Voce tem 3 novas notificões</h3>
-												</div>
-											</li>
-											<li><a href="#">
-												<div class="user_img"><img src="images/p5.png" alt=""></div>
-											   <div class="notification_desc">
-										</ul>
-									</li>	
-									<li class="dropdown head-dpdn">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-tasks"></i><span class="badge blue1">9</span></a>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+											<i class="fa fa-tasks"></i>
+											<span class="badge blue1">9</span>
+										</a>
 										<ul class="dropdown-menu">
 											<li>
 												<div class="notification_header">
@@ -92,95 +109,127 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												</div>
 											</li>
 										</ul>
-									</li>	
-								</ul>
-								<div class="clearfix"> </div>
+									</li>
+							</ul>
+							<div class="clearfix"> </div>
 							</div>
 							<!--notification menu end -->
-							<div class="profile_details">		
+							<div class="profile_details">
 								<ul>
 									<li class="dropdown profile_details_drop">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-											<div class="profile_img">	
-												<span class="prfil-img"><img src="images/p1.jpg" alt=""> </span> 
+											<div class="profile_img">
+												<span class="prfil-img">
+													<img src="images/p1.jpg" alt=""> </span>
 												<div class="user-name">
 													<p>Nathur</p>
 													<span>Administrator</span>
 												</div>
-												<div class="clearfix"></div>	
-											</div>	
+												<div class="clearfix"></div>
+											</div>
 										</a>
 									</li>
 								</ul>
 							</div>
-							<div class="clearfix"> </div>				
+							<div class="clearfix"> </div>
 						</div>
-				     <div class="clearfix"> </div>	
-				</div>
-<div class="container-fluid">			
-	<div class="row">
-		<div class="market-updates">
-        	<div class="col-md-12 market-update-gd">
-                <div class="col-md-12">
-					<img src="{% static 'web/images/home.jpg' %}">
-					<div class="row">
-						<div class="col-md-12">
-						{% block content %}
-						{% endblock %}
+						<div class="clearfix"> </div>
+					</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="market-updates">
+								<div class="col-md-12 market-update-gd">
+									<div class="col-md-12">
+										<img src="{% static 'web/images/home.jpg' %}">
+										<div class="row">
+											<div class="col-md-12">
+												{% block content %} {% endblock %}
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-			    </div>
+				</div>
+				<div class="copyrights">
+					<p>© 2019 Loja. Todos os direitos reservados | Desenvolvido por:
+						<a href="http:/intagram.com/victornathur" target="_blank">victornathur</a>
+					</p>
+				</div>
+				<!--COPY rights end here-->
 			</div>
+			<!--slider menu-->
+			<div class="sidebar-menu">
+				<div class="logo">
+					<a href="#" class="sidebar-icon">
+						<span class="fa fa-bars"></span>
+					</a>
+					<a href="#">
+						<span id="logo"></span>
+					</a>
+				</div>
+				<div class="menu">
+					<ul id="menu">
+						<li id="menu-comunicacao">
+							<a href="#">
+								<i class="fa fa-shopping-cart"></i>
+								<span>Departamentos</span>
+								<span class="fa fa-angle-right" style="float: right"></span>
+							</a>
+							<ul id="menu-comunicacao-sub">
+								<li id="menu-camisa">
+									<a href="/departamento/camisa/">Camisas</a>
+								</li>
+								<li id="menu-casual">
+									<a href="/departamento/casual/">Casual</a>
+								</li>
+							</ul>
+						</li>
+						<li id="menu-academico">
+							<a href="#">
+								<i class="fa fa-file-text"></i>
+								<span>Formularios</span>
+								<span class="fa fa-angle-right" style="float: right"></span>
+							</a>
+							<ul id="menu-academico-sub">
+								<li id="menu-camisa-form">
+									<a href="/departamento/camisa/form/">Camisas</a>
+								</li>
+								<li id="menu-casual-form">
+									<a href="/departamento/casual/form/">Casual</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
 		</div>
-	</div>
-</div>
-</div>
-<div class="copyrights">
-	 <p>© 2019 Loja. Todos os direitos reservados | Desenvolvido por:  <a href="http:/intagram.com/victornathur" target="_blank">victornathur</a> </p>
-</div>	
-<!--COPY rights end here-->
-</div>
-<!--slider menu-->
-    <div class="sidebar-menu">
-			  <div class="logo"> <a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="#"> <span id="logo" ></span> </a> </div>		  
-		    <div class="menu">
-		      <ul id="menu" >
-		        <li id="menu-comunicacao" ><a href="#"><i class="fa fa-cogs"></i><span>Departamentos</span><span class="fa fa-angle-right" style="float: right"></span></a>
-		          <ul id="menu-comunicacao-sub" >
-					<li id="menu-camisa" ><a href="/departamento/camisa/">Camisas</a></li>
-					<li id="menu-casual" ><a href="/departamento/casual/">Casual</a></li>	
-		          </ul>
-                </li>
-		      </ul>
-		    </div>
-	 </div>
-	<div class="clearfix"> </div>
-</div>
-<!--slide bar menu end here-->
-<script>
-var toggle = true;
-            
-$(".sidebar-icon").click(function() {                
-  if (toggle)
-  {
-    $(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
-    $("#menu span").css({"position":"absolute"});
-  }
-  else
-  {
-    $(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
-    setTimeout(function() {
-      $("#menu span").css({"position":"relative"});
-    }, 400);
-  }               
-                toggle = !toggle;
-            });
-</script>
-<!--scrolling js-->
+		<!--slide bar menu end here-->
+		<script>
+			var toggle = true;
+
+			$(".sidebar-icon").click(function () {
+				if (toggle) {
+					$(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+					$("#menu span").css({ "position": "absolute" });
+				}
+				else {
+					$(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+					setTimeout(function () {
+						$("#menu span").css({ "position": "relative" });
+					}, 400);
+				}
+				toggle = !toggle;
+			});
+		</script>
+		<!--scrolling js-->
 		<script src="{% static 'web/js/jquery.nicescroll.js' %}"></script>
 		<script src="{% static 'web/js/scripts.js' %}"></script>
 		<!--//scrolling js-->
-<script src="{% static 'web/js/bootstrap.js' %}"> </script>
-<!-- mother grid end here-->
+		<script src="{% static 'web/js/bootstrap.js' %}"> </script>
+		<!-- mother grid end here-->
 </body>
-</html>      
+
+</html>
