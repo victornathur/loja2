@@ -10,4 +10,6 @@ urlpatterns = [
     path('camisa/form/', views.camisa_form),
     path('casual/form/', views.casual_form),
     path('camisa/<int:camisa_id>/edit/', views.camisa_edit),
+    path('casual/<int:casual_id>/edit/', views.casual_edit)
+    
 ]

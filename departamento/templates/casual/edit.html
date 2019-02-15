@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+  <div class="col-lg-12">
+      <section class="panel">
+          <header class="panel-heading">
+              Cadastrando Casual
+          </header>
+          <div class="panel-body">
+              <form role="form" class="form-validate" action="/departamento/casual/{{casual_id}}/edit/" method="POST">
+                  {% csrf_token %}
+                  <div class="form-group">
+                      <label for="{{for.esporte.id_for_label}}">{{form.esporte.label}}</label>
+                      <div>
+                          {{form.esporte}}
+                          {% for error in form.esporte.errors %}
+                          <label for="{{for.esporte.id_for_label}}" class="error">{{error}}</label>
+                          {% endfor %}
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="{{for.cor.id_for_label}}">{{form.cor.label}}</label>
+                      <div>
+                          {{form.cor}}
+                          {% for error in form.cor.errors %}
+                          <label for="{{for.cor.id_for_label}}" class="error">{{error}}</label>
+                          {% endfor %}
+                      </div>                     
+                  </div>
+                  <div class="form-group">
+                      <label for="{{for.tipo.id_for_label}}">{{form.tipo.label}}</label>
+                      <div>
+                          {{form.tipo}}
+                          {% for error in form.tipo.errors %}
+                          <label for="{{for.tipo.id_for_label}}" class="error">{{error}}</label>
+                          {% endfor %}
+                      </div>
+                  </div>
+                  <input type="submit" class="btn btn-primary"></input>
+                  <a class="btn btn-primary" href="/departamento/casual/">Voltar</a>
+              </form>
+
+          </div>
+      </section>
+  </div>
+
+</div>
+{% endblock %}

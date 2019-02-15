@@ -59,3 +59,18 @@ def camisa_edit(request, camisa_id):
         camisa = Camisa.objects.get(pk=camisa_id)
         form = CamisaForm(instance=camisa)
         return render(request, 'camisa/edit.html', {'form':form,'camisa_id':camisa_id})
+    
+def casual_edit(request, casual_id):
+    if (request.method == 'POST'):
+        casual = Casual.objects.get(pk=casual_id)
+        form = CasualForm(request.POST, instance=casual)
+        if form.is_valid():
+           form.save()
+           return redirect('/departamento/casual/')
+        else:
+           return render(request, 'casual/edit.html', {'form':form,'casual_id':casual_id})
+    else:
+        casual = Casual.objects.get(pk=casual_id)
+        form = CasualForm(instance=casual)
+        return render(request, 'casual/edit.html', {'form':form,'casual_id':casual_id})
+

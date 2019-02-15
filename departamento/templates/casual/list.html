@@ -20,6 +20,7 @@
                     <th>Cor</th>
                     <th>Tipo</th>
                     <th>#</th>
+                    <th>#</th>
                 </tr>
             </thead>
             <tbody>
@@ -30,6 +31,9 @@
                     <td>{{casual.tipo}}</td>
                     <td>
                         <a href="/departamento/casual/{{casual.id}}/">Ver</a>
+                    </td>
+                    <td>
+                        <a href="/departamento/casual/{{casual.id}}/edit/">Editar</a>
                     </td>
                 </tr>
                 {% endfor %}
