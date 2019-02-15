@@ -21,6 +21,7 @@
                     <th>Numero</th>
                     <th>Tamanho</th>
                     <th>#</th>
+                    <th>#</th>
                 </tr>
             </thead>
             <tbody>
@@ -32,6 +33,9 @@
                     <td>{{camisa.tamanho}}</td>
                     <td>
                         <a href="/departamento/camisa/{{camisa.id}}/">Ver</a>
+                    </td>
+                    <td>
+                        <a href="/departamento/camisa/{{camisa.id}}/edit">Editar</a>
                     </td>
                 </tr>
                 {% endfor %}

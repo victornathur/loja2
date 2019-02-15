@@ -6,10 +6,20 @@ class CamisaForm(ModelForm):
         model = Camisa
         fields = '__all__'
         widgets = {
-            'nome':TextInput(attrs={'class':'form-control'}),
-            'dt_nasc':TextInput(attrs={'class':'form-control'}),
-            'cpf':TextInput(attrs={'class':'form-control'}),
-            'sexo':TextInput(attrs={'class':'form-control'}),
+            'time':TextInput(attrs={'class':'form-control'}),
+            'jogador':TextInput(attrs={'class':'form-control'}),
+            'numero':TextInput(attrs={'class':'form-control'}),
+            'tamanho':TextInput(attrs={'class':'form-control'}),
 
         }
 
+class CasualForm(ModelForm):
+    class Meta:
+        model = Casual
+        fields = '__all__'
+        widgets = {
+            'esporte':TextInput(attrs={'class':'form-control'}),
+            'cor':TextInput(attrs={'class':'form-control'}),
+            'tipo':TextInput(attrs={'class':'form-control'}),
+            
+        }

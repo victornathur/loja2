@@ -1,0 +1,46 @@
+{% extends "base.html" %} {% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h3 class="page-header">
+            <i class="fa fa-laptop"></i> Cadastrando Camisa Casual </h3>
+        <ol class="breadcrumb">
+            <li>
+                <i class="fa fa-home"></i>
+                <a href="/departamento/">Loja</a>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="panel-body">
+    <form role="form" class="form-validate" action="/departamento/casual/form/" method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="{{for.esporte.id_for_label}}">{{form.esporte.label}}</label>
+            <div>
+                {{form.esporte}} {% for error in form.esporte.errors %}
+                <label for="{{for.esporte.id_for_label}}" class="error">{{error}}</label>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="{{for.cor.id_for_label}}">{{form.cor.label}}</label>
+            <div>
+                {{form.cor}} {% for error in form.cor.errors %}
+                <label for="{{for.cor.id_for_label}}" class="error">{{error}}</label>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="{{for.tipo.id_for_label}}">{{form.tipo.label}}</label>
+            <div>
+                {{form.tipo}} {% for error in form.tipo.errors %}
+                <label for="{{for.tipo.id_for_label}}" class="error">{{error}}</label>
+                {% endfor %}
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <a class="btn btn-primary" href="/departamento/casual/">Voltar</a>
+    </form>
+</div>
+
+{% endblock %}
